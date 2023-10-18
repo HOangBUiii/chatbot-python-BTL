@@ -1,0 +1,140 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "xin chào",
+        "alo",
+        "bắt đầu",
+        "Bắt đầu"
+      ],
+      "responses": [
+        "Nha khoa N xin chào, anh/chị cần tư vấn về sức khỏe hay tham khảo dịch vụ bên mình ạ? (nhập 'tư vấn' hoặc 'dịch vụ')"
+      ]
+    },
+    {
+      "tag": "Option1",
+      "patterns": [
+        "tư vấn",
+        "tôi muốn tư vấn",
+        "tu van"
+      ],
+      "responses":[
+        "Anh/chị có gặp vấn đề nào trong các vấn đề dưới đây: \n\t1. Sâu răng (P01) \n\t2. Viêm lợi (P02) \n\t3. Răng ê buốt (P03) \n\t4. Răng khôn mọc lệch (P04) \n\t5. Hôi miệng (P05) \n\t6. Răng xỉn màu, ố vàng (P06) \nVui lòng nhập mã (chẳng hạn 'P01')"
+      ]
+    },
+    {
+      "tag": "OptionAdvise1",
+      "patterns": ["P01", "1"],
+      "responses": [
+        "Nguyên nhân chính dẫn đến sâu răng do xuất phát từ việc vệ sinh răng miệng chưa đúng cách. Lúc đầu, mảng vụn do thức ăn còn sót lại trên răng, lâu dần hình thành các mảng bám. Một số vi khuẩn sản sinh ở các mảng bám, tiết ra axit làm xói mòn men răng gây sâu răng. Nếu không kịp loại bỏ mảng bám và vi khuẩn, tình trạng sâu răng sẽ tiến triển. \nAnh/chị muốn điều trị triệt để có thể liên hệ với nha khoa N qua hotline: 0337837273 hoặc đến trực tiếp nha khoa từ địa chỉ để được nha sĩ và tư vấn viên hỗ trợ."
+      ]
+    },
+    {
+      "tag": "OptionAdvise2",
+      "patterns": ["P02", "2"],
+      "responses":[
+        "Viêm lợi gây kích ứng, đỏ, sưng phần nướu xung quanh chân răng. Thức ăn vụn chen vào những khoảng trống nhỏ giữa răng và lợi gây nhiễm trùng. Khi vi khuẩn tích tụ quá nhiều trên răng tạo thành cao răng, hình thành các túi mủ dưới nướu. Lúc này tình trạng viêm lợi trở nên trầm trọng. Nếu không điều trị kịp thời có thể dẫn đến viêm nha chu và mất răng vĩnh viễn. \nCó nhiều nguyên nhân gây viêm lợi phải kể đến như: \n\tNghiện rượu, thuốc lá. \n\tĂn nhiều đồ ngọt, cay. \n\tVi khuẩn tích tụ trong các mảng bám trên răng lâu ngày. \n\tPhụ nữ đang có kinh nguyệt. \n\tNgười bệnh tiểu đường"
+      ]
+    },
+    {
+      "tag": "OptionAdvise3",
+    "patterns": ["P03", "3"],
+      "responses": [
+        "Nguyên nhân dẫn đến khi men răng bị tổn thương vì những yếu tố sâu răng, mòn men răng, bệnh nướu răng, gãy răng hoặc lộ chân răng. Nha khoa N khuyên anh/chị nên đến trực tiếp tại phòng khám đế được tư vấn điều trị, tránh để vùng ê buốt trở nên ngày càng nghiêm trọng"
+      ]
+    },
+    {
+      "tag": "OptionAdvise4",
+      "patterns": [
+        "P04",
+        "4"
+      ],
+      "responses": [
+        "Được mệnh danh 'răng khôn' nhưng lại gây nhiều phiền toái, dẫn đến tiêu xương, viêm quanh thân răng,… gây chèn ép và sâu răng số 7.Vì 'sinh sau đẻ muộn', răng khôn mọc ở vị trí không thuận lợi và nằm quá sâu trong hàm. Bạn cần nhổ răng khôn mọc lệch vì những lý do sau đây: \n\t1.Khó vệ sinh răng miệng, tạo điều kiện tốt cho vi khuẩn phát triển gây nên bệnh viêm lợi, viêm tủy răng. \n\t2.Phòng các biến chứng nguy hiểm như: u nang xương hàm, viêm tủy răng kế cận, viêm lợi… \n\t3.Đa số răng khôn có gây biến chứng thường được chỉ định nhổ. Tuy nhiên, tùy vào mức độ nghiêm trọng và tình trạng thực tế, bác sĩ sẽ đưa ra quyết định nhổ hay không. Trước khi nhổ răng khôn, bạn cần phải thăm khám, chụp X-quang để bác sĩ có thể đánh giá được mức độ sai lệch của răng."
+      ]
+    },
+    
+    {
+      "tag": "OptionAdvise5",
+      "patterns": [
+        "P05","5"
+      ],
+      "responses": [
+        "Khoảng 85% người bị hôi miệng thường mắc các bệnh về răng miệng như viêm nướu, viêm nha chu, sâu răng, khô miệng và có mảng bám trên lưỡi. Nguyên nhân xuất phát từ thức ăn còn sót lại trong khoang miệng không được vệ sinh sạch sẽ, khiến vi khuẩn phát triển tạo ra các bệnh răng miệng. \nSử dụng nước súc miệng chỉ giúp giảm mùi hôi phần nào chứ không giúp chữa khỏi hẳn. Vì vậy anh/chị nên đến trực tiếp phòng khám nha khoa N để tìm ra đúng nguyên nhân gây hôi miệng và chữa trị dứt điểm."
+      ]
+    },
+    {
+      "tag": "OptionAdvise6",
+      "patterns": [
+        "P06",
+        "6"
+      ],
+      "responses": [
+        "3 nguyên nhân chính dẫn đến răng xỉn màu, đổi màu: \n\t1.Thói quen hàng ngày: người thường xuyên hút thuốc, uống cà phê, nước ngọt, rượu vang,.. dễ khiến răng ố vàng. Đặc biệt, với người hút thuốc lá, nhựa nicotin lâu dần bám vào răng tạo thành một màu vàng xỉn hay thâm đen. Mặt khác, không chăm sóc răng đủ, không vệ sinh răng miệng thường xuyên dẫn đến vôi răng tích tụ gây ố vàng. \n\t2. Bệnh ở răng: sâu răng, viêm lợi, viêm chân răng, chết tủy là những yếu tố tác động làm ngả màu răng. Sự hoạt động của các vi khuẩn gây bệnh cộng với thức ăn còn sót lại trong miệng đã ảnh hưởng men răng, khiến răng xỉn màu. Ngoài ra, cao răng nếu không được làm sạch rất dễ gây bệnh nguy hiểm cho răng miệng như viêm nha chu. \n\t3. Vấn đề tuổi tác: tuổi tác ngày càng lớn, đồng nghĩa với lớp ngoài của men răng bị mòn đi, lộ ra màu vàng tự nhiên của ngà răng làm răng đổi màu. \nAnh/chị có thể đến trực tiếp phòng khám nha khoa N để được nha sĩ có chuyên môn tư vấn hoặc liên hệ qua hot line: 0337837273"
+      ]
+    },
+    {
+      "tag": "Option2",
+      "patterns":[
+        "dịch vụ",
+        "dich vu"
+      ],
+      "responses": [
+        "Nha khoa N có những dịch vụ sau:\n 1. Bọc răng sứ(M01) \n 2. Niềng răng(M02) \n 3. Nhổ răng(M03) \n 4. Cấy răng implant(M04)"
+      ]
+    },
+    {
+      "tag": "OptionService1",
+      "patterns":[
+        "M01",
+        "Bọc răng sứ",
+        "Dịch vụ 1",
+        "Dich vu 1"
+      ],
+      "responses": [
+        "Phòng khám N sử dụng công nghệ bọc răng sứ Supper Ultra Thin. Đây là giải pháp sở hữu hàm răng trắng sáng chuẩn tỷ lệ vàng HOT nhất hiện nay. Super Ultra Thin hiện đang là công nghệ bọc răng sứ ưu việt và tiên tiến nhất, có khả năng giải quyết cả 6 vấn đề lớn nhất về răng: Khấp Khểnh – Hô, Thưa – Sứt Mẻ – Mòn Men – Nhiễm Màu – Hình Thể Xấu. Công nghệ giúp bảo tồn răng gốc gấp 2 lần so với những phương pháp bọc răng sứ khác CAM KẾT 3 KHÔNG: \n - KHÔNG mài nhỏ răng, không gây xâm lấn tới cấu trúc răng, giúp bảo vệ răng thật ở mức tối đa. \n - KHÔNG điều trị tủy, an toàn sinh lý. \n - KHÔNG đau, ê buốt, không biến chứng, xóa tan những bất cập của quy trình bọc sứ cũ."
+      ]
+    },
+    {
+      "tag": "OptionService2",
+      "patterns": [
+        "M02",
+        "Niềng răng",
+        "nieng rang",
+        "dịch vụ 2",
+        "dich vu 2",
+        "phòng khám còn các phương pháp khác không"
+      ],
+      "responses": [
+        "Phòng khám N sử dụng các phương pháp chỉnh nha sau: \n 1. Nắn chỉnh bằng mắc cài titan \n 2. Nắn chỉnh răng bằng mắc cài sứ \n 3. Nắn chỉnh răng bằng mắc cài composite \n 4. Nắn chỉnh răng bằng invisalingn \n - Ưu điểm khi thực hiện nắn chỉnh răng tại nha khoa N: \n Nha khoa Shining Smile tập hợp đội ngũ bác sĩ giỏi chuyên môn trong và ngoài nước, cùng với việc chú trọng trong đầu tư máy móc thiết bị tiên tiến, 100% nhập khẩu từ nước ngoài (như: đèn tẩy trắng răng bằng ánh sáng X- bright, hệ thống ghế máy nha khoa, đèn hàn quang trùng hợp Litex, máy Xquang kỹ thuật số RSV, máy nội soi răng…). \n - Nắn chỉnh răng bằng công nghệ hiện đại nhất hiện nay. \n - Không đau, không ảnh hưởng đến chức năng răng, thực hiện nhanh chóng, hiệu quả lâu dài. \n - Với phương châm đưa dịch vụ răng tốt nhất tới mọi khách hàng, Nha khoa Shining Smile triển khai áp dụng lịch hẹn khám qua mail, cửa sổ chat trực tuyến, điện thoại…. nhu cầu của khách hàng được thực hiện nhanh chóng, tối đa, giúp tiết kiệm thời gian và chủ động hơn trong thăm khám. \n - Khâu vô trùng đặc biệt được chú ý, mọi quy trình đều tuân thủ theo tiêu chuẩn nghiêm ngặt của Bộ Y tế."
+      ]
+    },
+    {
+      "tag": "OptionService3",
+      "patterns": [
+        "Nhổ răng",
+        "Nho rang",
+        "M03",
+        "Dịch vụ 3",
+        "Dich vu 3"
+      ],
+      "responses": [
+        "Nha khoa N là một phòng khám nha khoa hiện đại luôn luôn đi đầu trong việc ứng dụng những công nghệ hiện đại, tiến tiến trong điều trị. Và trong nhổ răng số 8 cũng vậy, Nha khoa Shining Smile cũng luôn luôn đặt lên hàng đầu. Hiện tại Nha khoa N đang ứng dụng công nghệ nhổ răng bằng siêu âm Supersonic 5s giúp đem đến những trải nghiệm tuyệt vời cho người bệnh, không gây đau đớn cho người bệnh trong suốt quá trình nhổ răng. Công nghệ nhổ răng này có những ưu điểm như: \n - Là phương pháp nhổ răng an toàn không gây tổn thương đến nướu và mô mềm bởi bước sóng siêu âm với tần suất từ 28 đến 36KHZ. \n - Với công nghệ nhổ răng siêu âm Supersonic 5s giúp rút ngắn thời gian nhổ răng một cách tối đa chỉ còn 15 đến 30 phút. \n - Khi nhổ răng bác sĩ sẽ tiến hành gây tê sẽ giúp cho bạn không cảm thấy bị đau đớn, khó chịu. \n - Công nghệ nhổ răng Supersonic 5s giúp hỗ trợ phục hồi vết thương sau khi nhổ răng một cách nhanh chóng, giúp khép nướu chính xác bằng dung dịch sát khuẩn trong môi trường tiểu phẫu vô trùng."
+      ]
+    },
+    {
+      "tag": "OptionService4",
+      "patterns": [
+        "M04",
+        "Dịch vụ 4",
+        "Dich vu 4",
+        "Cấy răng implant",
+        "Cay rang implant"
+      ],
+      "responses": [
+        "Với mong muốn đem lại cho khách hàng của mình một nụ cười tự tin, tỏa sáng, Nha khoa N đã không ngừng đầu tư vào lĩnh vực cấy implant để giúp  khách hàng phục hồi lại những chiếc răng đã mất. Hiện tại trong lĩnh vực cấy ghép implant, nha khoa N đang ứng dụng công nghệ Surface Slactive 5D thế hệ mới để hạn chế tối đa sự đau nhức cho người bệnh trong quá trình cấy ghép. Công nghệ Surface Slactive 5D của phòng khám N có các ưu điểm: \n\t- Giúp hỗ trợ phục hồi vết thương nhanh chóng từ đó rút ngắn thời gian điều trị. \n\t- Không gây đau đớn, ê buốt cho người bệnh trong quá trình cấy ghép implant đồng thời không gây ra tình trạng viêm lợi hay hôi miệng sau khi răng implant đã được cấy vào xương hàm. - Góp phần tăng thêm tuổi thọ cho các implant. \n - Giúp ngăn chặn tình trạng tiêu xương và tụt lợi."
+      ]
+    }        
+  ]
+}
