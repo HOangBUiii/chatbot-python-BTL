@@ -2,10 +2,12 @@
 
 ## Clone this repo and open a virtual environment
 
+```bash
 git clone https://github.com/HOangBUiii/chatbot-python-BTL.git
 cd chatbot-python-BTL
 python -m venv venv
 .\venv\Scripts\activate
+```
 
 ## Install package
 ```bash
