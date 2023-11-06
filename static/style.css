@@ -70,6 +70,7 @@ body {
 
 /* MESSAGES */
 .chatbox__messages {
+    white-space: pre-line;
     margin-top: auto;
     display: flex;
     overflow-y: scroll;

@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 
 
+# Create NeuralNet model
 class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(NeuralNet, self).__init__()

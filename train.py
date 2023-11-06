@@ -16,19 +16,20 @@ with open('intents.json', 'r', encoding='utf-8') as f:
 all_words = []
 tags = []
 xy = []
-# loop through each sentence in our intents patterns
+# Lặp qua các intents - patterns
 for intent in intents['intents']:
     tag = intent['tag']
-    # add to tag list
+    # thêm vào list tags
     tags.append(tag)
     for pattern in intent['patterns']:
-        # tokenize each word in the sentence
+        # tokenize các từ trong câu
         w = tokenize(pattern)
-        # add to our words list
+        # thêm từ vào list words
         all_words.extend(w)
-        # add to xy pair
+        # thêm vào xy pair
         xy.append((w, tag))
 
+# Dùng cho tiếng anh
 # stem and lower each word
 ignore_words = ['?', '.', '!']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
@@ -122,7 +123,7 @@ data = {
 "output_size": output_size,
 "all_words": all_words,
 "tags": tags
-}
+} 
 
 FILE = "data.pth"
 torch.save(data, FILE)
